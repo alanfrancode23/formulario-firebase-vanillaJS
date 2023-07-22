@@ -1,0 +1,60 @@
+body {
+  background-color: rgb(218, 218, 218);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Asegura que el formulario se centre verticalmente */
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px; /* Ajusta el ancho del formulario */
+  background-color: #fff; /* Ajusta el color de fondo del formulario */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Agrega sombra al formulario */
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Asegura que los campos de entrada ocupen todo el ancho del formulario */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box; /* Asegura que el ancho incluya el relleno y el borde */
+}
+
+input[type="password"] {
+  width: 100%; /* Asegura que el campo de contraseña ocupe todo el ancho del formulario */
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #2e6ab8;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Asegura que el botón ocupe todo el ancho del formulario */
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
